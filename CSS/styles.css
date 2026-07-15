@@ -1,0 +1,231 @@
+/******************************************
+*  Author : Marcus Hernandez   
+*  Created On : Fri Mar 06 2026
+*  File : styles.css
+*******************************************/
+/* ---- Reset & Base ---- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #1a1a1a;
+  background: #f5f5f0;
+}
+
+/* ---- Navbar ---- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #1a1a1a;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+/* ---- Hero Section ---- */
+.hero {
+  background-image: url("../images/Paintsplash.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: black;
+  text-shadow:
+   -1px -1px 0 #999,
+   1px -1px 0 #999,
+  -1px  1px 0 #999,
+   1px  1px 0 #999;
+  margin-bottom: 1rem;
+} */
+
+/* .hero p {
+  font-size: 1.1rem;
+  color: #888;
+  opacity: 0.85;
+  max-width: 500px;
+} *
+
+/* ---- intro paragrah for pages ---- */
+.intro_p {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1rem;
+  max-width: 800px;
+  line-height: 1.5;
+  padding: 4px;
+
+}
+
+.intro_p h1 {
+  text-align: center;
+  margin-top: 2rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+/* ---- brand Grid ---- */
+.top_brand {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top_brand h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 265px));
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* ---- cards ---- */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 1rem;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+
+  img {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 8px; /* match card */
+    text-align: center;
+  }
+
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+
+  .overlay {
+    opacity: 1; /* fade over hover */
+  }
+}
+
+/* ---- Brand Summaries ---- */
+.summary {
+  p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  text-align: left;
+  margin: auto;
+  max-width: 800px;
+  line-height: 1.5;
+  padding: 4px;
+}
+
+/* ---- About ---- */
+.about {
+  h1 {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 2em;
+  }
+
+  text-align: left;
+  margin: auto;
+  margin-bottom: 1em;
+  max-width: 800px;
+  line-height: 1.5;
+  padding: 4px;
+}
+
+/* ---- Find my snapback tags ---- */
+.tags {
+  text-align: center;
+
+  img {
+    max-width: 400px;
+    margin: auto;
+  }
+}
+
+/* ---- Footer ---- */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #1a1a1a;
+  color: #777;
+  font-size: 0.9rem;
+}
