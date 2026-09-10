@@ -31,5 +31,5 @@ No special tools needed, just a web browser
 ## What I learned
 This project helped me understand semantic HTML and responisve CSS layout techniques like Flexbox/Grid. One challenge was learning how to make the site look conisistent on multiple pages. I also gained experience using github, writing a README, and deploying a website using Netlify.
 
-## Lisence
-This project is lisenced under the MIT lisence
+## License
+This project is licensed under the MIT license
